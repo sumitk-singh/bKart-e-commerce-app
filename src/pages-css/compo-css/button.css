@@ -1,0 +1,282 @@
+/* colors variables */
+
+:root {
+    --primary: #0000ff;
+    --primary-hover: #00218c;
+    --secondary: #808080;
+    --secondary-hover: #737373;
+    --success: #008f0a;
+    --success-hover: #005700;
+    --danger: #ff0000;
+    --danger-hover: #ba0000;
+    --warning: #ffae00;
+    --warning-hover: #855a00;
+    --info: #009da8;
+    --info-hover: #005a61;
+    --light: #f5f5f5;
+    --light-hover: #e6e6e6;
+    --dark: #545454;
+    --dark-hover: #1a1a1a;
+}
+
+
+/* *** */
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--light);
+    border: none;
+    width: auto;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+}
+
+
+/* solid button */
+
+.solid-primary {
+    background: var(--primary);
+}
+
+.solid-primary:hover {
+    background: var(--primary-hover);
+    transition: background 0.5s;
+}
+
+.solid-secondary {
+    background: var(--secondary);
+}
+
+.solid-secondary:hover {
+    background: var(--secondary-hover);
+    transition: background 0.5s;
+}
+
+.solid-success {
+    background: var(--success);
+}
+
+.solid-success:hover {
+    background: var(--success-hover);
+    transition: background 0.5s;
+}
+
+.solid-danger {
+    background: var(--danger);
+}
+
+.solid-danger:hover {
+    background: var(--danger-hover);
+    transition: background 0.5s;
+}
+
+.solid-warning {
+    background: var(--warning);
+}
+
+.solid-warning:hover {
+    background: var(--warning-hover);
+    transition: background 0.5s;
+}
+
+.solid-info {
+    background: var(--info);
+}
+
+.solid-info:hover {
+    background: var(--info-hover);
+    transition: background 0.5s;
+}
+
+.solid-light {
+    color: var(--dark);
+    background: var(--light);
+}
+
+.solid-light:hover {
+    color: var(--dark);
+    background: var(--light-hover);
+    transition: background 0.5s;
+}
+
+.solid-dark {
+    color: var(--light);
+    background: var(--dark);
+}
+
+.solid-dark:hover {
+    color: var(--light-hover);
+    background: var(--dark-hover);
+    transition: background 0.5s;
+}
+
+
+/* *** */
+
+
+/* outline button */
+
+.outline-primary {
+    color: var(--primary);
+    border: solid var(--primary);
+    background: transparent;
+}
+
+
+/* hover */
+
+.outline-primary:hover {
+    background: var(--primary);
+    color: var(--light);
+    transition: background-color 0.6s;
+}
+
+.outline-secondary {
+    color: var(--dark);
+    border: solid var(--secondary);
+    background: transparent;
+}
+
+
+/* hover */
+
+.outline-secondary:hover {
+    background: var(--secondary);
+    color: var(--light);
+    transition: background-color 0.6s;
+}
+
+.outline-success {
+    color: var(--success);
+    border: solid var(--success);
+    background: transparent;
+}
+
+
+/* hover */
+
+.outline-success:hover {
+    background: var(--success);
+    color: var(--light);
+    transition: background-color 0.6s;
+}
+
+.outline-danger {
+    color: var(--danger);
+    border: solid var(--danger);
+    background: transparent;
+}
+
+
+/* hover */
+
+.outline-danger:hover {
+    background: var(--danger);
+    color: var(--light);
+    transition: background-color 0.6s;
+}
+
+.outline-warning {
+    color: var(--warning);
+    border: solid var(--warning);
+    background: transparent;
+}
+
+
+/* hover */
+
+.outline-warning:hover {
+    background: var(--warning);
+    color: var(--light);
+    transition: background-color 0.6s;
+}
+
+.outline-info {
+    color: var(--info);
+    border: solid var(--info);
+    background: transparent;
+}
+
+
+/* hover */
+
+.outline-info:hover {
+    background: var(--info);
+    color: var(--light);
+    transition: background-color 0.6s;
+}
+
+.outline-light {
+    color: var(--light);
+    border: solid var(--light);
+    background: transparent;
+}
+
+
+/* hover */
+
+.outline-light:hover {
+    background: var(--light);
+    color: var(--dark-hover);
+    transition: background-color 0.6s;
+}
+
+.outline-dark {
+    color: var(--dark);
+    border: solid var(--dark);
+    background: transparent;
+}
+
+
+/* hover */
+
+.outline-dark:hover {
+    background: var(--dark);
+    color: var(--light-hover);
+    transition: background-color 0.6s;
+}
+
+
+/* *** */
+
+
+/* link, icon and floating button */
+
+.link-btn {
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.link-btn:hover {
+    text-decoration: underline;
+}
+
+.icon-btn {
+    cursor: pointer;
+}
+
+.floating-btn {
+    cursor: pointer;
+    background: black;
+    color: var(--light);
+    padding: 12px;
+    height: 1.25rem;
+    width: 1.25rem;
+    border-radius: 50%;
+    margin: 1rem 0;
+    text-align: center;
+    gap: 15px;
+}
+
+.floating-btn>a {
+    padding-inline-end: 0.5rem;
+}
+
+.floating-btn:hover {
+    box-shadow: 0px 0px 10px var(--secondary);
+}
+
+
+/* *** */

@@ -1,0 +1,124 @@
+@import "../compo-css/navbar.css";
+@import "./home-page-style.css";
+@import url("https://fonts.googleapis.com/css2?family=Orienta&family=Quicksand&display=swap");
+:root {
+  --color-footer-background: #cecece;
+  --color-red: #fc0101;
+  --color-white: #ffffff;
+  --color-dark: #050505;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Orienta", sans-serif;
+  font-family: "Quicksand", sans-serif;
+}
+
+/* component page container */
+.page-layout-container {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+  row-gap: 5px;
+  grid-template-areas: "header header header " "section-1 section-1 section-1 " "section-2 section-2 section-2 " "section-3 section-3 section-3 " "footer footer footer ";
+  padding: 5px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+/* *** */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-area: header;
+  height: 3.7rem;
+}
+
+.section-1 {
+  grid-area: section-1;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
+
+.section-2 {
+  background: var(--color-white);
+  grid-area: section-2;
+}
+
+.section-3 {
+  background: var(--color-white);
+  grid-area: section-3;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
+
+.footer {
+  background: var(--color-footer-background);
+  color: var(--color-dark);
+  grid-area: footer;
+  text-align: center;
+  height: fit-content;
+  padding: 2rem;
+}
+
+.odd-color-text {
+  color: var(--color-red);
+}
+
+ul li {
+  display: inline;
+  padding: 1rem;
+  list-style-type: none;
+  color: var(--color-dark);
+}
+
+a {
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--color-dark);
+  text-decoration: none;
+}
+
+.highlight-text {
+  font-weight: bolder;
+  color: var(--color-red);
+  background: var(--color-white);
+}
+/* *** */
+
+/* section-1 */
+.home-page-content-1 > p {
+  font-size: 1rem;
+  padding-top: 10px;
+  padding-bottom: 1.9rem;
+}
+
+.section-1 {
+  display: flex;
+  height: fit-content;
+  padding-top: 1rem;
+  justify-content: space-between;
+}
+/* *** */
+
+/* section-2 */
+.section-2 {
+  display: flex;
+  margin-top: 1.5rem;
+  justify-content: space-between;
+}
+
+.home-page-content-2 {
+  padding-bottom: 5px;
+  height: auto;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* *** */

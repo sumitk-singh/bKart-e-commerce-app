@@ -1,0 +1,68 @@
+       /* color variables */
+       
+        :root {
+           --theam-color-black: #000000;
+           --theam-color-orange: #ffa245;
+           --color-light-orange: #fff2d9;
+       }
+       /* *** */
+       /* simple nav-bar */
+       
+       .nav-bar {
+           display: flex;
+           height: 1.875rem;
+           width: 100%;
+           align-items: center;
+           justify-content: space-between;
+           margin-left: 1.25rem;
+           margin-right: 1.25rem;
+       }
+       
+       .brand-logo>a>img {
+           width: 18vh;
+           height: 5vh;
+       }
+       
+       .nav-bar-icons-list,
+       .nav-bar-links-list {
+           display: flex;
+           gap: 0.938rem;
+           list-style: none;
+       }
+       
+       .nav-bar-search-box>input {
+           width: 21.875rem;
+           height: 1.563rem;
+           padding-left: 0.625rem;
+           border-radius: 12px;
+       }
+       
+       .fa-magnifying-glass {
+           margin-left: 5px;
+           cursor: pointer;
+       }
+       
+       .fa-magnifying-glass:hover {
+           cursor: pointer;
+           color: var(--theam-color-orange);
+           transition: color 0.5s;
+       }
+       
+       .nav-bar-links-list>li:hover {
+           cursor: pointer;
+           color: var(--theam-color-orange);
+           transition: color 0.5s;
+       }
+       
+       .nav-bar-icons-list>li:hover {
+           cursor: pointer;
+           color: var(--theam-color-orange);
+           transition: color 0.5s;
+       }
+       
+       div>ul>li>a:hover {
+           cursor: pointer;
+           color: var(--theam-color-orange);
+           transition: color 0.5s;
+       }
+       /* *** */

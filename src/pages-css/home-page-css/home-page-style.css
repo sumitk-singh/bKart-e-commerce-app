@@ -1,0 +1,134 @@
+/* color variables */
+:root {
+    --banner-background-color: #303030;
+    --theam-color-black: #000000;
+    --theam-color-orange: #ffa245;
+    --color-light-orange: #fff2d9;
+    --color-gray: #6b6b6b;
+    --color-light-gray: #a8a7a7;
+    --color-card-1: #004070;
+    --color-card-2: #41573e;
+    --color-card-3: #573e49;
+}
+/* *** */
+
+
+/* font size variables */
+
+:root {
+    --font-size-l: 5rem;
+    --font-size-m: 3rem;
+    --font-size-s: 1.5rem;
+}
+/* *** */
+
+/* section-1,  home-page-product--header-display */
+.home-page-header-product-display {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 6.25rem;
+    gap: 3.125rem;
+    justify-content: center;
+}
+
+.round-btn {
+    text-align: center;
+    border-radius: 50%;
+    height: 7rem;
+    width: 7rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+    letter-spacing: 5px;
+    background-color: var(--theam-color-black);
+    color: var(--color-light-orange);
+}
+
+.round-btn>a {
+    color: var(--color-light-orange);
+    cursor: pointer;
+}
+
+.round-btn:hover {
+    background: var(--color-gray);
+    background: linear-gradient(66deg, var(--color-gray) 28%, var(--color-light-gray) 42%, var(--banner-background-color) 100%);
+}
+/* end of home-page-product--header-display */
+
+/* section-2 home page banner */
+.home-page-banner {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--banner-background-color);
+    color: var(--theam-color-orange);
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem;
+}
+
+.home-page-banner>h2 {
+    letter-spacing: 0.5rem;
+}
+
+.home-page-banner>h2,
+h4,
+p {
+    line-height: 2rem;
+}
+
+.home-page-banner>p {
+    font-size: var(--font-size-s);
+}
+/* end of home page banner */
+
+/* section-3 home page offer card */
+.home-page-offer-card {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    padding-top: 10px;
+    justify-content: center;
+}
+
+.offer-card {
+    text-align: center;
+    height: 3rem;
+    padding: 5rem;
+    color: var(--color-light-orange);
+}
+
+.card-1 {
+    background: var(--color-card-1);
+}
+
+.card-2 {
+    background: var(--color-card-2);
+}
+
+.card-3 {
+    background: var(--color-card-3);
+}
+
+.text-inline {
+    display: inline;
+}
+
+/* offfer card btn */
+.offer-card-btn {
+    width: 10rem;
+    padding: 7px;
+    background-color: transparent;
+    border-radius: 10px;
+    color: var(--color-light-orange);
+}
+
+.offer-card-btn:hover {
+    background-color: var(--theam-color-black);
+    transition: background-color 0.6s;
+    color: var(--theam-color-orange);
+    cursor: pointer;
+}
+
+/* end of home page offer card */
