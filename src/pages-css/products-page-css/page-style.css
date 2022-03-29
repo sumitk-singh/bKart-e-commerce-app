@@ -1,0 +1,121 @@
+/* card */
+
+@import "../compo-css/card.css";
+
+/* button */
+
+@import "../compo-css/button.css";
+
+/* color variables */
+
+:root {
+    --color-orange: #ffb95e;
+    --color-light-orange: #ffe3a6;
+    --color-white: #ffffff;
+    --color-light-gray: #e8e8e8;
+    --color-light-black: #575757;
+    --color-light-red: #bf9393;
+}
+
+
+/* filter clear */
+
+#filter-clear {
+    float: right;
+    cursor: pointer;
+    color: var(--color-light-red);
+}
+
+
+/***/
+
+
+/* rating */
+
+.checked {
+    color: var(--color-orange);
+}
+
+.unchecked {
+    color: var(--color-light-gray);
+}
+
+.light-checked {
+    color: var(--color-light-orange);
+}
+
+#rating-in-line {
+    display: flex;
+    justify-content: space-around;
+}
+
+label>span {
+    cursor: pointer;
+}
+
+.range-selector{
+    width: 100%;
+    
+}
+
+/* *** */
+
+
+/* cursor pointer */
+
+input,
+label {
+    cursor: pointer;
+}
+
+.search-box {
+    cursor: auto;
+}
+
+
+/* *** */
+
+
+/* tshirt  */
+
+.prod-tshirt,
+.prod-jacket,
+.prod-shirt,
+.prod-pant,
+.prod-goggles {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    gap: 1.5rem;
+   
+}
+
+.prod-tshirt>img {
+    padding: 1rem;
+    width: 10rem;
+    height: auto;
+}
+
+.prod-jacket>img {
+    padding: 1rem;
+    width: 10rem;
+    height: auto;
+}
+
+.prod-shirt>img {
+    padding: 1rem;
+    width: 10rem;
+    height: auto;
+}
+
+.prod-pant>img {
+    padding: 1rem;
+    width: 10rem;
+    height: auto;
+}
+
+.prod-googles>img {
+    padding: 1rem;
+    width: 10rem;
+    height: auto;
+}
