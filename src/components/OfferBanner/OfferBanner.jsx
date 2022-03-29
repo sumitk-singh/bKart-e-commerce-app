@@ -1,4 +1,4 @@
-import '../../pages-css/home-page-css/page-layout-handeler.css';
+import '../../pages-css/home-page-css/page-layout-handler.css';
 
 const OfferBanner =()=>{
     return(

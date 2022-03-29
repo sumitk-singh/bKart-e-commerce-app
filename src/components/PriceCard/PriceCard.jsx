@@ -1,5 +1,4 @@
 //Home page price card
-// import '../../pages-css/cart-css/page-layout.css';
 import '../../pages-css/compo-css/card.css';
 
 //*** Home page price card items ***
