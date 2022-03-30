@@ -1,7 +1,5 @@
 import "../../pages-css/products-page-css/layout-handler.css";
 import {react,useState} from "react";
-// import {useCart} from "../../Contexts/cartContext";
-// import {useWishList}  from "../../Contexts/wishListContext";
 import { useFilter } from "../../Contexts/filterContext";
 import Sidebar from "../Sidebar/Sidebar";
 import ProductData from "../../db/productData";
@@ -12,15 +10,6 @@ const Products = () => {
     const { filteredProduct } = useFilter();
 
     // console.log(filteredProduct);
-
-
-  
-    // add to cart
-    
-  
-    // Move to wishlist
-  
-   
 
     return (
         <>
@@ -60,11 +49,7 @@ const Products = () => {
                         })
                     }
                     
-
-                    
                 </div>
-
-
             </div>
         </>
     );
