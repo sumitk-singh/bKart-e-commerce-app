@@ -1,0 +1,67 @@
+/* color variables */
+
+:root {
+    --color-orange: #de8100;
+    --color-white: #ffffff;
+    --color-light-gray: #cecece;
+}
+
+
+/* *** */
+
+
+/* wishlist  */
+
+.prod-in-wishlist {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 19px;
+}
+
+.prod-in-wishlist>img {
+    padding: 1rem;
+    width: 10rem;
+    height: auto;
+}
+
+
+/* *** */
+
+
+/* btn */
+
+.cart-card-btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-primary {
+    margin: 2px;
+    padding: 6px;
+    background-color: var(--color-dark);
+    color: var(--color-orange);
+    cursor: pointer;
+}
+
+.btn-secondary {
+    margin: 2px;
+    padding: 6px;
+    background-color: var(--color-light-black);
+    color: var(--color-light-gray);
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-orange);
+    color: var(--color-dark);
+    transition: background-color 0.5s;
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-dark-orange);
+    color: var(--color-dark);
+    transition: background-color 0.5s;
+}
+
+
+/* *** */
