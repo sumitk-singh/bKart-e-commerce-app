@@ -1,0 +1,133 @@
+@import "../compo-css/navbar.css";
+@import "../compo-css/card.css";
+/* color variables */
+
+:root {
+  --color-footer-background: #cecece;
+  --color-red: #fc0101;
+  --color-white: #ffffff;
+  --color-dark: #050505;
+}
+
+/* *** */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Orienta", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* page container */
+
+#page_layout_container {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+  row-gap: 5px;
+  grid-template-areas:
+    "header header header"
+    "section_1 section_1 section_1"
+    "section_2 section_2 section_3"
+    "footer footer footer";
+  padding: 5px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* *** */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-area: header;
+  height: 3.7rem;
+}
+
+#section_1 {
+  grid-area: section_1;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+ 
+}
+
+#section_2 {
+  grid-area: section_2;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+ 
+}
+
+#section_3 {
+  grid-area: section_3;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+ }
+
+.footer {
+  background: var(--color-footer-background);
+  color: var(--color-dark);
+  grid-area: footer;
+  text-align: center;
+  height: fit-content;
+  padding: 2rem;
+}
+
+.odd-color-text {
+  color: var(--color-red);
+}
+
+ul li {
+  display: inline;
+  padding: 15px;
+  list-style-type: none;
+  color: var(--color-dark);
+}
+
+a {
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--color-dark);
+  text-decoration: none;
+}
+
+.highlight-text {
+  font-weight: bolder;
+  color: var(--color-red);
+  background: var(--color-white);
+}
+
+/* section-1 */
+
+#section_1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* section-2 */
+
+#section_2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.r_side_cart_details {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: -webkit-sticky;
+  position: fixed;
+  width: 20rem;
+
+}

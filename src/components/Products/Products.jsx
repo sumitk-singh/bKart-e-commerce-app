@@ -1,14 +1,15 @@
 import "../../pages-css/products-page-css/layout-handler.css";
-import {react,useState} from "react";
+import {useCart} from "../../Contexts/cartContext";
+import {useWishList}  from "../../Contexts/wishListContext";
 import { useFilter } from "../../Contexts/filterContext";
 import Sidebar from "../Sidebar/Sidebar";
-import ProductData from "../../db/productData";
 import { Link } from "react-router-dom";
   
 const Products = () => {
 
     const { filteredProduct } = useFilter();
-
+    const {addToWishList} = useWishList();
+    const {addToCart } = useCart();
     // console.log(filteredProduct);
 
     return (
@@ -39,9 +40,9 @@ const Products = () => {
                                     </h3>
                                 </div>
                                 <div className="card-btn">
-                                    <Link to="/Cart"><button className="buy-btn" >Buy</button></Link>
-                                    <button className="add-to-wishlist" ><i class="fas fa-heart" ></i> </button>
-                                    <button className="add-to-cart" ><i class="fas fa-shopping-cart"></i> </button>
+                                    <Link to="/Cart"><button className="buy-btn" onClick={() => addToCart({ _id, product })}>Buy</button></Link>
+                                    <button className="add-to-wishlist" href="#url" onClick={() => addToWishList({product})}><i class="fas fa-heart" ></i> </button>
+                                    <button className="add-to-cart" href="#url" onClick={() => addToCart({ _id, product })}><i class="fas fa-shopping-cart"></i> </button>
                                 </div>
                             </div>
                         </div>
@@ -49,7 +50,11 @@ const Products = () => {
                         })
                     }
                     
+
+                    
                 </div>
+
+
             </div>
         </>
     );
