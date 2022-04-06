@@ -12,7 +12,7 @@ const LoginPage = () => {
                         <input type="email" placeholder="Email id" />
                         <input type="password" placeholder="Password" />
                         <button class="btn-login">Login</button>
-                        <p> <a class="txt-highlight" to="/Signup"><Link to="/Signup">Sign up</Link></a> <a class="txt-float-right" href="#url">Forgot pasword?</a></p>
+                        <p> <a class="txt-highlight" ><Link to="/Signup">Sign up</Link></a> <a class="txt-float-right" >Forgot pasword?</a></p>
                     </form>
                 </div>
 
