@@ -1,5 +1,6 @@
 //Home page price card
 import '../../pages-css/compo-css/card.css';
+import { Link } from "react-router-dom";
 
 //*** Home page price card items ***
 const priceTags = [
@@ -22,7 +23,7 @@ const PriceCard = () => {
         {priceTags.map((price, index) => {
           return <div className="offer-card card-2" key={index}>
             <h2 lass="text-inline" >Under INR {price.price}/-</h2>
-            <button className="offer-card-btn">View all</button>
+            <Link to={"/Product"}><button className="offer-card-btn">View all</button></Link>
           </div>
         })}
       </div>
