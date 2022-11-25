@@ -47,7 +47,7 @@ const Products = () => {
                                                 <span className="sale-price"><span className="sale-price">Price: ₹{product.price}</span></span> <span>
                                                     <h5 id="mrp">MRP: ₹{product.MRP}</h5>
                                                 </span><span className="review">
-                                                    <p>Rating: <span>{product.rating}</span><span class="fa fa-star checked"></span></p>
+                                                    <p id="text-rating">Rating: <span>{product.rating}</span><span class="fa fa-star checked"></span></p>
                                                 </span>
                                             </h3>
                                         </div>

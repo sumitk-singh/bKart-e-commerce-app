@@ -127,3 +127,12 @@ a {
     align-items: center;
 }
 
+#text-rating{
+    color: #050505;
+}
+
+.card-btn{
+    display: flex;
+    gap: 5px;
+    justify-content:space-around;
+}
