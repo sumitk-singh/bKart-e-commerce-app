@@ -52,6 +52,7 @@
 .round-btn:hover {
     background: var(--color-gray);
     background: linear-gradient(66deg, var(--color-gray) 28%, var(--color-light-gray) 42%, var(--banner-background-color) 100%);
+    cursor: pointer;
 }
 /* end of home-page-product--header-display */
 
