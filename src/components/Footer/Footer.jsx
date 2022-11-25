@@ -8,13 +8,13 @@ const Footer = () => {
             </p>
             <ul className="nav-icon-center">
                 <li>
-                    <a href="https://www.linkedin.com/in/sumit-singh-a94b56228/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.linkedin.com/in/sumit-singh-a94b56228/" target={"_blank"}><i class="fa-brands fa-linkedin-in"></i></a>
                 </li>
                 <li>
-                    <a href="https://twitter.com/sumitsi79994403" ><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://twitter.com/sumitsi79994403" target={"_blank"}><i class="fa-brands fa-twitter"></i></a>
                 </li>
                 <li>
-                    <a href="https://github.com/sumitk-singh" ><i class="fa-brands fa-github"></i></a>
+                    <a href="https://github.com/sumitk-singh" target={"_blank"} ><i class="fa-brands fa-github"></i></a>
                 </li>
             </ul>
         </div>
