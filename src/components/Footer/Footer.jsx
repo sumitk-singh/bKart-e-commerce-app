@@ -3,7 +3,7 @@ import "../../pages-css/home-page-css/page-layout-handler.css";
 const Footer = () => {
     return (
         <div className="footer">
-            <p>© 2022 | B-kart</p>
+            <p>© 2023 | B-kart</p>
             <p>Made with <span className="odd-color-text"><i class="fa fa-code" aria-hidden="true"></i></span> by Sumit Kr Singh
             </p>
             <ul className="nav-icon-center">
